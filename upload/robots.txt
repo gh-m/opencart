@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /*&limit
+Disallow: /*&sort
+Disallow: /*?route=checkout/
+Disallow: /*?route=account/
+Disallow: /*?route=product/search
+Disallow: /*?route=affiliate/
+Disallow: /admin/
+Disallow: /catalog/
+Disallow: /download/
+Disallow: /install/
+Disallow: /system/
+Allow: /
+Allow: /image/data/
+Sitemap: http://<?php echo $_SERVER['HTTP_HOST']; ?>/index.php?route=feed/google_sitemap
