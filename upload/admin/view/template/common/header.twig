@@ -19,7 +19,11 @@
 <script src="view/javascript/jquery/datetimepicker/moment/moment-with-locales.min.js" type="text/javascript"></script>
 <script src="view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
 <link href="view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.css" type="text/css" rel="stylesheet" media="screen" />
+<?php if ($direction == 'rtl') { ?>
+<link type="text/css" href="view/stylesheet/stylesheet-rtl.css" rel="stylesheet" media="screen" />
+<?php } else { ?>
 <link type="text/css" href="view/stylesheet/stylesheet.css" rel="stylesheet" media="screen" />
+<?php } ?>
 {% for style in styles %}
 <link type="text/css" href="{{ style.href }}" rel="{{ style.rel }}" media="{{ style.media }}" />
 {% endfor %}
